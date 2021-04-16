@@ -39,10 +39,12 @@ public String updateEmployee(@PathVariable int empId,@RequestBody Employee emplo
 	employeeService.updateEmployee(empId,employee);
 	return"Employee updated Successfully";
 }
-@DeleteMapping("/employee/{empId}")
-public String deleteEmployee(@PathVariable int empId) {
-	employeeService.deleteEmployee(empId);
-	return "Employee Deleted Successfully";
-	
-}
+/*
+ * @DeleteMapping("/employee/{empId}") public String
+ * deleteEmployee(@PathVariable int empId) {
+ * employeeService.deleteEmployee(empId); return
+ * "Employee Deleted Successfully";
+ * 
+ * }
+ */
 }
